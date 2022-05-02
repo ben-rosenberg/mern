@@ -156,6 +156,10 @@ console.log(dojo);
 // learn(); // seattle, burbank
 // console.log(dojo); // san jose
 
+// NOTE: I originally predicted an error, as the global dojo is never declared.
+// This is incorrect, as the JS interpreter assumes a var declaration if it
+// sees that it is never properly declared elsewhere. The behavior is strange
+// and unpredictable, so this should never intentionally be done.
 
 /* 8 */
 
