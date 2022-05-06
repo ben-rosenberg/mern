@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark: rgb(31, 31, 31);
+    --light: rgb(211, 211, 211);
+}
+
+body {
+    padding: 1rem 10rem;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.flex_row {
+    display: flex;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap_1 {
+    gap: 1rem;
+}
+
+.buttons_bar {
+    margin: 0 auto;
+}
+
+.tab_button {
+    padding: 2px;
+    height: 5vh;
+    width: 10vw;
+    background-color: var(--light);
+    color: black;
+    border: 1px solid black;
+    font-size: 0.8rem;
+}
+
+.tab_button_selected {
+    padding: 1px;
+    height: 5.1vh;
+    width: 10.1vw;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    font-size: 0.8rem;
+}
+
+.tab_content {
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    min-height: 80vh;
+    background-color: rgb(50, 50, 50);
+}
