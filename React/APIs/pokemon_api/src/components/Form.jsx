@@ -8,7 +8,6 @@ const Form = (props) => {
         event.preventDefault();
 
         props.onSubmission(numResults, resultsOffset);
-        props.updateDisplayResultsOffset(resultsOffset);
 
         setNumResults("");
         setResultsOffset("");
