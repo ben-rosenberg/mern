@@ -4,7 +4,7 @@ import '../style.css';
 
 const SearchForm = (props) => {
     const [ searchType, setSearchType ] = useState("people");
-    const [ searchId, setSearchId ] = useState("");
+    const [ searchId, setSearchId ] = useState("1");
 
     const navigate = useNavigate();
 

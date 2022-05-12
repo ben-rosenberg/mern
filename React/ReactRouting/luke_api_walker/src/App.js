@@ -14,13 +14,13 @@ function App() {
         <div className="flex_col gap_2">
             <div>
                 <h1 className='text_center'>Star Wars Search</h1>
-                <SearchForm></SearchForm>
+                <SearchForm />
             </div>
             <Routes>
                 <Route path="" element={ <Welcome /> } />
                 <Route path=':type/:id' element={ <DisplayResource setErrorMessage = { setErrorMessage }/> } />
-                <Route path=':any' element={ <ErrorPage errorMessage = { "404" }/> } />
                 <Route path='error' element={ <ErrorPage errorMessage={ errorMessage }/> } />
+                <Route path='*' element={ <ErrorPage errorMessage = { "404" }/> } />
             </Routes>
         </div>
     );
