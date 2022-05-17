@@ -18,7 +18,7 @@ const Main = () => {
 
     return (
         <div className='flex_col gap_1'>
-            <Form setFormSubmissionFlag={ setWasFormSubmitted }/>
+            <Form setFormSubmissionFlag={ setWasFormSubmitted } formSubmissionFlagValue={ wasFormSubmitted } />
             <hr />
             { allDbProducts.length > 0 && <ProductsTable dbProducts={ allDbProducts } /> }
         </div>

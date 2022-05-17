@@ -18,7 +18,7 @@ const Form = (props) => {
         })
             .then(res => {
                 console.log(res);
-                props.setFormSubmissionFlag(true);
+                props.setFormSubmissionFlag(!props.formSubmissionFlagValue);
                 
                 setTitle('');
                 setPrice('');
